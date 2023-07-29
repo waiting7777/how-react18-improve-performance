@@ -72,7 +72,7 @@ This 50ms benchmark is based on the fact that devices must create a new frame ev
   <img src="/main2.avif" />
 </div>
 <div v-click class="w-full h-full absolute top-10 left-10">
-  <img class="w-80%" src="side1.png" />
+  <img class="w-80%" src="/side1.png" />
 </div>
 <br>
 <br>
