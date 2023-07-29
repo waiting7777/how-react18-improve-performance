@@ -71,7 +71,9 @@ This 50ms benchmark is based on the fact that devices must create a new frame ev
 <div>
   <img src="/main2.avif" />
 </div>
-
+<div v-click class="w-full h-full absolute top-10 left-10">
+  <img class="w-80%" src="side1.png" />
+</div>
 <br>
 <br>
 
@@ -422,6 +424,35 @@ h1 {
 
 ---
 
+# React Server Components
+<br/>
+By default, React won't hydrate React Server Components. The components aren't expected to use any client-side interactivity like accessing the window object or use hooks like useState or useEffect.
+<br/>
+<br/>
+you can use the "use client" bundler directive on the top of the file. 
+<br/>
+<br/>
+<div>
+  <img src="/main11.avif" />
+</div>
+
+<br>
+<br>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+
 # Suspense
 <br/>
 Using Suspense, we can delay the rendering of a component until certain conditions are met, such as data being loaded from a remote source. In the meantime, we can render a fallback component that indicates that this component is still loading.
@@ -467,6 +498,24 @@ h1 {
 - React Server Components lets developers build components that work on both the server and client, combining the interactivity of client-side apps with the performance of traditional server rendering without the cost of hydration.
 <br>
 <br>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+
+# Refernce
+<br/>
+<a target="_blank" src="https://vercel.com/blog/how-react-18-improves-application-performance">How React 18 Improves Application Performance</a>
 
 <style>
 h1 {
